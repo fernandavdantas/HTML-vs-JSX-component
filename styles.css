@@ -113,7 +113,7 @@ body {
 
 /* ============================================
    Buttons (CTA)
-   .secondary = default; .primary = dark
+   .secondary = default; .primary = dark; .tertiary = light stroke
    ============================================ */
 .download-button {
     margin-top: auto;
@@ -126,7 +126,7 @@ body {
     font-weight: 500;
     color: #333;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .download-button:hover {
@@ -149,6 +149,22 @@ body {
 
 .download-button.primary:active {
     background-color: #333;
+}
+
+/* Tertiary CTA: light stroke, light hover */
+.download-button.tertiary {
+    background-color: transparent;
+    color: #26251e;
+    border: 1px solid rgba(38, 37, 30, 0.25);
+}
+
+.download-button.tertiary:hover {
+    background-color: rgba(38, 37, 30, 0.06);
+    border-color: rgba(38, 37, 30, 0.35);
+}
+
+.download-button.tertiary:active {
+    background-color: rgba(38, 37, 30, 0.1);
 }
 
 /* ============================================
